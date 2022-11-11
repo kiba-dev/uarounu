@@ -3,7 +3,7 @@ import { Container } from '@mui/material'
 
 const Layout = ({ children }) => {
   return (
-    <Container maxWidth="lg">
+    <Container sx={{ height: '100%' }}>
       {children}
     </Container>
   )

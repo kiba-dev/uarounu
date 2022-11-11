@@ -40,7 +40,8 @@ const HomePage = () => {
       <Box>
         <Typography sx={{ mb: 4 }}>Top discussed topics in the last 7 days</Typography>
         {topics && Object.values(topics).map((item, index) => (
-          <Chip key={index} label={item.replace(/"/g, '')} sx={{ mr: 2 }} onClick={() => handleClick(item)} />
+          <Chip color="primary" variant='outlined' key={index} label={item.replace(/"/g, '')} 
+                sx={{ mr: 2 }} onClick={() => handleClick(item)} />
         ))}
       </Box>
     </Box>
