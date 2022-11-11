@@ -1,0 +1,7 @@
+body {
+    background-color: aliceblue;
+}
+
+html, body, #root {
+    height: 100%;
+}
