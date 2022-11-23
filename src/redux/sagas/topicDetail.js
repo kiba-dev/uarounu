@@ -5,7 +5,7 @@ import apiCall from '../api/apiCall'
 const doGetDiscussedTimes = apiCall({
     type: CONSTANTS.GET_DISCUSSED_TIMES,
     method: 'get',
-    path: 'https://8ijxvwcygd.execute-api.us-west-1.amazonaws.com/test/PopulateDates'
+    path: 'https://8ijxvwcygd.execute-api.us-west-1.amazonaws.com/test/populatedates'
 })
 
 const doGetOtherTopics = apiCall({

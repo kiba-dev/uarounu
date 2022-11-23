@@ -4,7 +4,7 @@ import AdSense from 'react-adsense'
 const GoogleAd = () => {
   return (
     <AdSense.Google
-      client='492-636-1374'
+      client='ca-pub-1320864528410285'
       slot='6259591966'
       style={{ display: 'block' }}
       format='auto'
