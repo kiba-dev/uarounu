@@ -27,6 +27,7 @@ import {
 const TopicDetailsPage = () => {
 
   const [isLoading, setIsLoading] = useState(false)
+  const [error, setError] = useState(false)
 
   const history = useHistory()
   const { id } = useParams()
@@ -53,6 +54,11 @@ const TopicDetailsPage = () => {
     dispatch(getTopicResult({
       success: () => {
         setIsLoading(false)
+        setError(false)
+      },
+      fail: () => {
+        setIsLoading(true)
+        setError(true)
       }
     }))
   }
@@ -76,7 +82,7 @@ const TopicDetailsPage = () => {
       {isLoading ?
         <Stack sx={{ width: '100%', height: '400px' }} spacing={2} direction="row" justifyContent="center" alignItems='center'>
           <CircularProgress color="success" />
-        </Stack> :
+        </Stack> : error ? <Typography>Error</Typography> :
         <Card sx={{ height: 'calc(100vh - 130px)', overflowY: 'scroll' }}>
           <Box
             sx={{

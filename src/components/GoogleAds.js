@@ -5,7 +5,7 @@ const GoogleAd = () => {
   return (
     <AdSense.Google
       client='492-636-1374'
-      slot=''
+      slot='6259591966'
       style={{ display: 'block' }}
       format='auto'
       responsive='true'
