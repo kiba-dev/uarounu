@@ -4,8 +4,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import {
   Box,
   TextField,
-  Typography,
-  Button,
+  Typography,  
   Link,
   Chip,
   Card,
@@ -18,7 +17,6 @@ import Header from 'components/Header'
 import GoogleAd from '../../components/GoogleAds'
 import { getDiscussedTimes, getOtherTopics, getSpeakersList, getTopicResult } from 'redux/modules/topicDetail/actions'
 import {
-  topicDiscussedTimeSelector,
   otherTopicsSelector,
   speakersListSelector,
   topicResultSelector
@@ -31,8 +29,7 @@ const TopicDetailsPage = () => {
 
   const history = useHistory()
   const { id } = useParams()
-  const dispatch = useDispatch()
-  const times = useSelector(topicDiscussedTimeSelector)
+  const dispatch = useDispatch()  
   const otherTopics = useSelector(otherTopicsSelector)
   const speakers = useSelector(speakersListSelector)
   const topicResult = useSelector(topicResultSelector)
